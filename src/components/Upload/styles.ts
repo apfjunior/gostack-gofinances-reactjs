@@ -1,11 +1,11 @@
-import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
+import styled, { css, FlattenSimpleInterpolation } from "styled-components";
 
 interface UploadProps {
   isDragActive: boolean;
   isDragReject: boolean;
   refKey?: string;
   [key: string]: any;
-  type?: 'error' | 'success' | 'default';
+  type?: "error" | "success" | "default";
 }
 
 const dragActive = css`
@@ -17,7 +17,7 @@ const dragReject = css`
 `;
 
 export const DropContainer = styled.div.attrs({
-  className: 'dropzone',
+  className: "dropzone",
 })`
   border: 1.5px dashed #969cb3;
   border-radius: 5px;
@@ -33,9 +33,9 @@ export const DropContainer = styled.div.attrs({
 `;
 
 const messageColors = {
-  default: '#5636D3',
-  error: '#e83f5b',
-  success: '#12a454',
+  default: "#5636D3",
+  error: "#e83f5b",
+  success: "#12a454",
 };
 
 export const UploadMessage = styled.p`
@@ -44,7 +44,7 @@ export const UploadMessage = styled.p`
   line-height: 24px;
   padding: 48px 0;
 
-  color: ${({ type }: UploadProps) => messageColors[type || 'default']};
+  color: ${({ type }: UploadProps) => messageColors[type || "default"]};
 
   justify-content: center;
   align-items: center;

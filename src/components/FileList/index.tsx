@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Container, FileInfo } from './styles';
+import { Container, FileInfo } from "./styles";
 
 interface FileProps {
   name: string;
